@@ -15,7 +15,6 @@ def gerar_chaves(bits=128):
     d = pow(e, -1, phi)
     return (n, e), (n, d)
 
-
 def salvar_chave(nome_arquivo, chave):
     with open(nome_arquivo, "w") as f:
         f.write(f"{chave[0]},{chave[1]}")
